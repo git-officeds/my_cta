@@ -1,0 +1,105 @@
+/* ===== Instagram CTA ===== */
+.insta-cta {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 32px 24px;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #f0e4ea;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+    box-sizing: border-box;
+}
+
+.insta-cta__lead {
+    margin: 0 0 16px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #555;
+    letter-spacing: 0.05em;
+}
+
+/* アイコン + テキストのボタンリンク */
+.insta-cta__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    padding: 12px 32px 12px 14px;
+    border-radius: 999px;
+    background: linear-gradient(45deg, #f9ce34, #ee2a7b 50%, #6228d7);
+    color: #fff;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(238, 42, 123, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+}
+
+.insta-cta__link:hover,
+.insta-cta__link:focus-visible {
+    color: #fff;
+    text-decoration: none;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(238, 42, 123, 0.4);
+    opacity: 0.95;
+}
+
+.insta-cta__link:focus-visible {
+    outline: 3px solid #6228d7;
+    outline-offset: 3px;
+}
+
+.insta-cta__icon {
+    display: block;
+    width: 56px;
+    height: 56px;
+    padding: 6px;
+    background: #fff;
+    border-radius: 50%;
+    box-sizing: border-box;
+    object-fit: contain;
+}
+
+.insta-cta__text {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 0.04em;
+}
+
+.insta-cta__desc {
+    margin: 20px 0 0;
+    font-size: 15px;
+    line-height: 1.8;
+    color: #444;
+}
+
+.insta-cta__br {
+    display: none;
+}
+
+/* スマートフォン */
+@media (max-width: 575px) {
+    .insta-cta {
+        padding: 24px 16px;
+    }
+
+    .insta-cta__link {
+        gap: 10px;
+        padding: 10px 24px 10px 10px;
+    }
+
+    .insta-cta__icon {
+        width: 46px;
+        height: 46px;
+    }
+
+    .insta-cta__text {
+        font-size: 20px;
+    }
+
+    .insta-cta__desc {
+        font-size: 14px;
+    }
+
+    .insta-cta__br {
+        display: inline;
+    }
+}

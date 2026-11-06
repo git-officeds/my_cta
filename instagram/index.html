@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <style>
+    /* Wordpressテーマ「Lightning」に沿ったレスポンシブ設定 */
+        .container{
+            margin: 20px auto;
+            padding-left: 15px;
+            padding-right: 15px;
+            box-sizing: border-box;
+        }
+        @media (max-width: 575px){  /* containerサイズ100% */
+           .container{ width: 100%; }
+        }
+        @media (min-width: 576px){  /* containerサイズ690px */
+           .container{ width: 510px; }
+        }
+        @media (min-width: 768px){  /* containerサイズ690px */
+           .container{ width: 690px; }
+        }
+        @media (min-width: 993px){  /* containerサイズ960px(サイドバー有：610px） */
+           .container{ width: 960px; }
+        }
+        @media (min-width: 1201px){  /* containerサイズ1140px(サイドバー有：730px） */
+           .container{ width: 1140px; }
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Instagram CTA -->
+        <section class="insta-cta">
+            <p class="insta-cta__lead">公式Instagramはじめました</p>
+            <!-- href は当園のInstagramアカウントURLに差し替えてください -->
+            <a class="insta-cta__link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                <img class="insta-cta__icon" src="images/logo_instagram_color.png" alt="Instagram" width="56" height="56">
+                <span class="insta-cta__text">Follow Us!</span>
+            </a>
+            <p class="insta-cta__desc">
+                当園の入居者様の日常の様子や、<br class="insta-cta__br">
+                季節のイベントなどのご案内をお届けしています。<br>
+                ぜひフォローしてご覧ください。
+            </p>
+        </section>
+    </div>
+</body>
+</html>
